@@ -1,17 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Fira+Code:wght@300&display=swap');
-
-body {
-    --body-bg: #FFD6F6;
-
-    --body-headings-color: red;
-    --cursor-color: white;
-
-    --text-font: "EB Garamond", serif;
-    --heading-font: "Fira Code";
-    --code-font: "Fira Code";
-    --page-text-color: black;
-
-    --telomere-border: black;
-    --telomere-unread: black;
-
+html, body {
+    position: fixed;
+    margin: 0;
+    height: 100%;
+    font-size: 10pt;
+    font-family: Helvetica;
+    color: black;
+	text-align: center;
+    z-index: auto;
+}
+h1 {
+    position: fixed;
+    font-family: Helvetica;
+    color: chartreuse;
+	text-align: center;
+    z-index: auto;
+}
+#background {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+a {
+    position: automatic;
+    font-size: 10pt;
+    font-family: Helvetica;
+    color: blue;
+	text-align: center;
+    z-index: 1;
+}
+.progress-bar-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#progress-bar {
+    width: 10%;
+    height: 0.5%;
+}
+label {
+    color: chartreuse;
+    font-size: 10pt;
 }
