@@ -1,2 +1,4 @@
 .gltf filter=lfs diff=lfs merge=lfs -text
 *.gltf filter=lfs diff=lfs merge=lfs -text
+untitled.gltf filter=lfs diff=lfs merge=lfs -text
+body.gltf filter=lfs diff=lfs merge=lfs -text
