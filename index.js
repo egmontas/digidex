@@ -142,15 +142,15 @@ xyzLoader.load('models/test.xyz', function(geometry){
 
 //Lighting
 
-const light = new THREE.DirectionalLight(0xffffff,2)
+const light = new THREE.DirectionalLight(0xffffff,5)
 light.position.set(0,10,0)
 scene.add(light)
 
 
 const sphere = new THREE.SphereGeometry(0.05, 16, 12)
-const light1 = new THREE.PointLight(0xffffff,1.5,25)
-const light2 = new THREE.PointLight(0xffffff,1.5,25)
-const light3 = new THREE.PointLight(0xffffff,1.5,25)
+const light1 = new THREE.PointLight(0xffffff,5,25)
+const light2 = new THREE.PointLight(0xffffff,5,25)
+const light3 = new THREE.PointLight(0xffffff,5,25)
 light1.add(new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({color: 0xffffff})))
 light2.add(new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({color: 0xffffff})))
 light3.add(new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({color: 0xffffff})))
